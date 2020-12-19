@@ -1,0 +1,49 @@
+
+-----------------------------------------------------------
+Table structure for table categories
+-----------------------------------------------------------
+Column		Type		Null	Default
+-----------------------------------------------------------
+id		int(11)		No	
+user_id		int(11)		No	
+name		varchar(255)	No	
+created_at	timestamp	No	current_timestamp()
+-----------------------------------------------------------
+Table structure for table comments
+-----------------------------------------------------------
+Column		Type		Null	Default
+-----------------------------------------------------------
+id		int(11)		No	
+post_id		int(11)		No	
+name		varchar(255)	No	
+email		varchar(255)	No	
+body		text		No	
+created_at	timestamp	Yes	current_timestamp()
+-----------------------------------------------------------
+Table structure for table posts
+-----------------------------------------------------------
+Column		Type		Null	Default
+-----------------------------------------------------------
+id		int(11)		No	
+category_id	int(11)		No	
+user_id	int(11)			No	
+title		varchar(255)	No	
+slug		varchar(255)	No	
+body		text		No	
+post_image	varchar(255)	No	
+created_at	timestamp	No	current_timestamp()
+-----------------------------------------------------------
+Table structure for table users
+-----------------------------------------------------------
+Column		Type		Null	Default
+-----------------------------------------------------------
+id		int(11)		No	
+name		varchar(255)	No	
+zipcode		varchar(255)	No	
+email		varchar(255)	No	
+username	varchar(255)	No	
+password	varchar(255)	No	
+register_date	timestamp	No	current_timestamp()
+
+
+    
